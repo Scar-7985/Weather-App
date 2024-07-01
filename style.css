@@ -1,0 +1,138 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background-color: bisque;
+    }
+
+    .box {
+        /* border: 2px solid red; */
+        background-color: #fff;
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: inset 0 0 20px #1AA7EC;
+    }
+
+    .box .search {
+        width: 100%;
+        height: 30px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box .search span {
+        /* border: 1px solid blue; */
+        height: 100%;
+    }
+
+    input {
+        height: 100%;
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 0 6px;
+        text-align: center;
+    }
+
+    input:focus {
+        box-shadow: 0 0 6px #1AA7EC;
+        outline: none;
+    }
+
+    .box .search span:last-child {
+        font-size: 24px;
+    }
+
+    .box .search span:last-child:active {
+        transform: scale(1.1);
+    }
+
+    .box .weather_logo {
+        margin: 40px 0;
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .box #loc_name {
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .box .temp {
+        width: 100%;
+        height: 30px;
+        margin: 40px 0;
+        /* border: 1px solid red; */
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 124px;
+    }
+
+    .box .temp p {
+        /* border: 1px solid blue; */
+        width: 60px;
+        height: 100%;
+        text-align: center;
+    }
+
+    .box .temp p:last-child {
+        width: 44px;
+    }
+
+    .box .info {
+        width: 100%;
+        height: 30px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+    }
+    .box .info span {
+        width: 49%;
+        height: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+    .box .info span:first-child {
+        border-right: 2px solid #1AA7EC;
+    }
+    .box .info span:last-child {
+        border-left: 2px solid #1AA7EC;
+    }
+    .box .info span p {
+        /* border: 2px solid red; */
+        width: 50px;
+        height: 100%;
+    }
+    .box .info span p:last-child {
+        width: 40px;
+    }
+
+    .box .desc {
+        margin: 30px 0;
+        /* border: 1px solid red; */
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
